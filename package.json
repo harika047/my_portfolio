@@ -1,5 +1,6 @@
 {
   "name": "darshini_portfolio",
+  "homepage": "https://harika047.github.io/my_portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -34,7 +35,4 @@
     "globals": "^17.6.0",
     "vite": "^8.0.12"
   }
-}
-{
-  "homepage": "https://harika047.github.io/my_portfolio"
 }
