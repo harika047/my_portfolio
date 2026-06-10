@@ -1,0 +1,30 @@
+export const skills = [
+{
+name:"Python",
+level:90
+},
+{
+name:"Machine Learning",
+level:88
+},
+{
+name:"SQL",
+level:85
+},
+{
+name:"Java",
+level:80
+},
+{
+name:"JavaScript",
+level:80
+},
+{
+name:"Flask",
+level:75
+},
+{
+name:"React",
+level:80
+}
+];
