@@ -2,6 +2,7 @@ import "./Projects.css";
 import { projects } from "../data/projects";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
+
 function Projects() {
   return (
     <section id="projects" className="projects">

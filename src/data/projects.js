@@ -1,38 +1,20 @@
 export const projects = [
 {
-title:"Shopper Intent Predictor",
-
-image:"/projects/shopper-intent.png",
-
+title: "Shopper Intent Predictor",
+image: "/my_portfolio/projects/shopper-intent.png",
 description:
 "ML web application predicting customer purchase intent with 85% accuracy.",
-
-tech:[
-"Python",
-"Flask",
-"Scikit Learn"
-],
-
-github:"#",
-demo:"#"
+tech: ["Python", "Flask", "Scikit Learn"],
+github: "#",
+demo: "#"
 },
-
 {
-title:"Buzz & Bites",
-
-image:"/projects/buzz-bites.png",
-
+title: "Buzz & Bites",
+image: "/my_portfolio/projects/buzz-bites.png",
 description:
 "Responsive coffee ordering platform with cart functionality.",
-
-tech:[
-"HTML",
-"CSS",
-"JavaScript",
-"Bootstrap"
-],
-
-github:"#",
-demo:"#"
+tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+github: "#",
+demo: "#"
 }
 ];

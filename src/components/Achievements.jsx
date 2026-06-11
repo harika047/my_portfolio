@@ -13,26 +13,26 @@ function Achievements() {
       <h2>Achievements</h2>
 
       <div className="stats-container">
+<div className="stat-card">
+  <h3>
+    <CountUp start={0} end={3} duration={2} />+
+  </h3>
+  <p>Hackathons</p>
+</div>
 
-        <div className="stat-card">
-          <h3>3+</h3>
-          <p>Hackathons</p>
-        </div>
+<div className="stat-card">
+  <h3>
+    <CountUp start={0} end={10} duration={2} />+
+  </h3>
+  <p>Projects</p>
+</div>
 
-        <div className="stat-card">
-          <h3>
-           10+
-          </h3>
-          <p>Projects</p>
-        </div>
-
-        <div className="stat-card">
-          <h3>
-           5+
-          </h3>
-          <p>Certifications</p>
-        </div>
-
+<div className="stat-card">
+  <h3>
+    <CountUp start={0} end={5} duration={2} />+
+  </h3>
+  <p>Certifications</p>
+</div>
       </div>
 
       <div className="achievement-grid">

@@ -1,6 +1,5 @@
 import "./Hero.css";
 import profile from "../assets/profile.png";
-import resume from "../assets/resume.pdf";
 
 import {
   FaGithub,
@@ -48,15 +47,25 @@ function Hero() {
           machine learning solutions, and scalable web experiences.
         </motion.p>
 
+        {/* BUTTONS */}
         <div className="hero-buttons">
 
-          <a href={resume} download>
-            <button className="primary-btn">
-              <FaDownload />
-              Resume
+          {/* View Resume */}
+          <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="secondary-btn">
+              View Resume
             </button>
           </a>
 
+          {/* Download Resume */}
+          <a href="./resume.pdf" download="Harika_Sai_Darshini_Resume.pdf">
+            <button className="primary-btn">
+              <FaDownload />
+              Download
+            </button>
+          </a>
+
+          {/* Projects */}
           <a href="#projects">
             <button className="secondary-btn">
               View Projects
@@ -65,13 +74,18 @@ function Hero() {
 
         </div>
 
+        {/* SOCIAL LINKS */}
         <div className="hero-socials">
 
           <a href="https://github.com/harika047" target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
 
-          <a href="https://www.linkedin.com/in/harika-sai-darshini-gadireddy" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/harika-sai-darshini-gadireddy"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin />
           </a>
 
@@ -79,6 +93,7 @@ function Hero() {
 
       </div>
 
+      {/* IMAGE SECTION */}
       <div className="hero-image-container">
 
         <div className="floating-icon icon1">
