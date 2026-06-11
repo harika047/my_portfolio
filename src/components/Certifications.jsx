@@ -13,37 +13,37 @@ function Certifications() {
       icon: <FaGoogle />,
       title: "Google AI/ML Virtual Internship",
       issuer: "Google • 2025",
-      link: "/certificates/google-aiml.pdf",
+      link: "/my_portfolio/certificates/google-aiml.pdf",
     },
     {
       icon: <FaLaptopCode />,
       title: "MongoDB Node.js Developer Path",
       issuer: "MongoDB University • 2025",
-      link: "/certificates/mongodb-nodejs.pdf",
+      link: "/my_portfolio/certificates/mongodb-nodejs.pdf",
     },
     {
       icon: <FaPython />,
       title: "Python Essentials 1",
       issuer: "Cisco Networking Academy • 2026",
-      link: "/certificates/python-essentials.pdf",
+      link: "/my_portfolio/certificates/python-essentials.pdf",
     },
     {
       icon: <FaCertificate />,
       title: "Introduction to Modern AI",
       issuer: "Cisco Networking Academy • 2026",
-      link: "/certificates/modern-ai.pdf",
+      link: "/my_portfolio/certificates/modern-ai.pdf",
     },
     {
       icon: <FaCertificate />,
       title: "Programming in Java",
       issuer: "NPTEL • Jul-Sep 2024",
-      link: "/certificates/programming-java.pdf",
+      link: "/my_portfolio/certificates/programming-java.pdf",
     },
     {
       icon: <FaLaptopCode />,
       title: "Diamond Certified Smart Coder",
       issuer: "Global Rank 2566 / 51250 • 2025",
-      link: "/certificates/smart-coder.pdf",
+      link: "/my_portfolio/certificates/smart-coder.pdf",
     },
   ];
 
