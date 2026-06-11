@@ -2,8 +2,6 @@ import "./Hero.css";
 import profile from "../assets/profile.png";
 
 import {
-  FaGithub,
-  FaLinkedin,
   FaDownload,
   FaReact,
   FaPython,
@@ -73,24 +71,6 @@ function Hero() {
           </a>
 
         </div>
-
-        {/* SOCIAL LINKS */}
-        <div className="hero-socials">
-
-          <a href="https://github.com/harika047" target="_blank" rel="noreferrer">
-            <FaGithub />
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/harika-sai-darshini-gadireddy"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedin />
-          </a>
-
-        </div>
-
       </div>
 
       {/* IMAGE SECTION */}
