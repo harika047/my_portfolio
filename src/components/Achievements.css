@@ -50,7 +50,7 @@
     #00e5ff,
     #00ff95
   );
-
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 
