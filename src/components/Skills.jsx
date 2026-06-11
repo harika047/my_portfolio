@@ -15,128 +15,81 @@ import {
   SiMysql
 } from "react-icons/si";
 
+const skillCategories = [
+  {
+    title: "Programming",
+    skills: [
+      { icon: <FaPython />, name: "Python", level: 90 },
+      { icon: <FaJava />, name: "Java", level: 80 },
+      { icon: <SiJavascript />, name: "JavaScript", level: 80 }
+    ]
+  },
+  {
+    title: "AI / ML",
+    skills: [
+      { icon: <SiTensorflow />, name: "Machine Learning", level: 88 },
+      { icon: <FaPython />, name: "Data Analysis", level: 85 },
+      { icon: <SiTensorflow />, name: "Deep Learning", level: 75 }
+    ]
+  },
+  {
+    title: "Web Development",
+    skills: [
+      { icon: <FaReact />, name: "React", level: 80 },
+      { icon: <FaHtml5 />, name: "HTML", level: 95 },
+      { icon: <FaCss3Alt />, name: "CSS", level: 90 },
+      { icon: <SiFlask />, name: "Flask", level: 75 }
+    ]
+  },
+  {
+    title: "Database",
+    skills: [
+      { icon: <SiMysql />, name: "MySQL", level: 85 },
+      { icon: <FaDatabase />, name: "SQL", level: 85 }
+    ]
+  }
+];
+
 function Skills() {
   return (
     <section id="skills" className="skills">
-
-      <h2>Skills</h2>
+      <h2 className="section-title">Skills</h2>
 
       <div className="skills-container">
+        {skillCategories.map((category, index) => (
+          <div
+            className="skill-category"
+            key={index}
+            style={{ animationDelay: `${index * 0.2}s` }}
+          >
+            <h3>{category.title}</h3>
 
-        <div className="skill-category">
-          <h3>Programming</h3>
+            {category.skills.map((skill, i) => (
+              <div className="skill" key={i}>
+                <div className="skill-info">
+                  <div className="skill-name">
+                    {skill.icon}
+                    <span>{skill.name}</span>
+                  </div>
 
-          <div className="skill">
-            <FaPython />
-            <span>Python</span>
-            <div className="progress">
-              <div style={{ width: "90%" }}></div>
-            </div>
+                  <span className="skill-percent">
+                    {skill.level}%
+                  </span>
+                </div>
+
+                <div className="progress">
+                  <div
+                    className="progress-bar"
+                    style={{
+                      width: `${skill.level}%`
+                    }}
+                  ></div>
+                </div>
+              </div>
+            ))}
           </div>
-
-          <div className="skill">
-            <FaJava />
-            <span>Java</span>
-            <div className="progress">
-              <div style={{ width: "80%" }}></div>
-            </div>
-          </div>
-
-          <div className="skill">
-            <SiJavascript />
-            <span>JavaScript</span>
-            <div className="progress">
-              <div style={{ width: "80%" }}></div>
-            </div>
-          </div>
-        </div>
-
-        <div className="skill-category">
-          <h3>AI / ML</h3>
-
-          <div className="skill">
-            <SiTensorflow />
-            <span>Machine Learning</span>
-            <div className="progress">
-              <div style={{ width: "88%" }}></div>
-            </div>
-          </div>
-
-          <div className="skill">
-            <FaPython />
-            <span>Data Analysis</span>
-            <div className="progress">
-              <div style={{ width: "85%" }}></div>
-            </div>
-          </div>
-
-          <div className="skill">
-            <SiTensorflow />
-            <span>Deep Learning</span>
-            <div className="progress">
-              <div style={{ width: "75%" }}></div>
-            </div>
-          </div>
-        </div>
-
-        <div className="skill-category">
-          <h3>Web Development</h3>
-
-          <div className="skill">
-            <FaReact />
-            <span>React</span>
-            <div className="progress">
-              <div style={{ width: "80%" }}></div>
-            </div>
-          </div>
-
-          <div className="skill">
-            <FaHtml5 />
-            <span>HTML</span>
-            <div className="progress">
-              <div style={{ width: "95%" }}></div>
-            </div>
-          </div>
-
-          <div className="skill">
-            <FaCss3Alt />
-            <span>CSS</span>
-            <div className="progress">
-              <div style={{ width: "90%" }}></div>
-            </div>
-          </div>
-
-          <div className="skill">
-            <SiFlask />
-            <span>Flask</span>
-            <div className="progress">
-              <div style={{ width: "75%" }}></div>
-            </div>
-          </div>
-        </div>
-
-        <div className="skill-category">
-          <h3>Database</h3>
-
-          <div className="skill">
-            <SiMysql />
-            <span>MySQL</span>
-            <div className="progress">
-              <div style={{ width: "85%" }}></div>
-            </div>
-          </div>
-
-          <div className="skill">
-            <FaDatabase />
-            <span>SQL</span>
-            <div className="progress">
-              <div style={{ width: "85%" }}></div>
-            </div>
-          </div>
-        </div>
-
+        ))}
       </div>
-
     </section>
   );
 }

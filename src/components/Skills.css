@@ -1,98 +1,79 @@
-.skills{
-padding:100px 8%;
+.skill-category {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px;
+  transition: 0.4s ease;
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
 }
 
-.skills h2{
-text-align:center;
-font-size:3rem;
-margin-bottom:60px;
+.skill-category:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 255, 255, 0.2);
 }
 
-.skills-container{
-display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(300px,1fr));
-
-gap:30px;
+.skill {
+  margin-bottom: 20px;
 }
 
-.skill-category{
-background:rgba(255,255,255,0.06);
-
-border:1px solid rgba(255,255,255,0.1);
-
-backdrop-filter:blur(10px);
-
-padding:30px;
-
-border-radius:20px;
-
-transition:0.3s;
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
-.skill-category:hover{
-transform:translateY(-8px);
-
-box-shadow:
-0 10px 30px rgba(56,189,248,0.2);
+.skill-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.skill-category h3{
-margin-bottom:25px;
-
-color:#38bdf8;
-
-font-size:1.4rem;
+.skill-name svg {
+  font-size: 1.3rem;
+  color: #00e5ff;
 }
 
-.skill{
-margin-bottom:20px;
+.progress {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50px;
+  overflow: hidden;
 }
 
-.skill svg{
-font-size:1.2rem;
-margin-right:10px;
-color:#38bdf8;
+.progress-bar {
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    #00e5ff,
+    #00ff95
+  );
+  animation: fillBar 2s ease forwards;
+  box-shadow: 0 0 15px rgba(0,255,255,0.6);
 }
 
-.skill span{
-display:inline-block;
-margin-bottom:8px;
-font-weight:500;
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 60px;
 }
 
-.progress{
-width:100%;
-height:10px;
-
-background:rgba(255,255,255,0.08);
-
-border-radius:50px;
-
-overflow:hidden;
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
 }
 
-.progress div{
-height:100%;
-
-background:
-linear-gradient(
-90deg,
-#38bdf8,
-#8b5cf6
-);
-
-border-radius:50px;
-}
-
-@media(max-width:768px){
-
-.skills{
-padding:80px 6%;
-}
-
-.skills h2{
-font-size:2.5rem;
-}
-
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
