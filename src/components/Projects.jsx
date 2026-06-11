@@ -24,7 +24,7 @@ function Projects() {
                 ))}
               </div>
 
-              <div className="project-links">
+              <div className="project-buttons">
                 {project.github !== "#" && (
                   <a
                     href={project.github}
