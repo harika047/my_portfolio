@@ -62,14 +62,6 @@ function Hero() {
               Download
             </button>
           </a>
-
-          {/* Projects */}
-          <a href="#projects">
-            <button className="secondary-btn">
-              View Projects
-            </button>
-          </a>
-
         </div>
       </div>
 
