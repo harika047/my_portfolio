@@ -1,5 +1,5 @@
 import "./Achievements.css";
-import CountUp from "react-countup";
+import {CountUp} from "react-countup";
 import {
   FaTrophy,
   FaCode,
