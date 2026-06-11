@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "Shopper Intent Predictor",
-    image: "/my_portfolio/public/projects/shopper-intent.png",
+    image: "/my_portfolio/projects/shopper-intent.png",
     description:
       "ML web application predicting customer purchase intent with 85% accuracy.",
     tech: ["Python", "Flask", "Scikit Learn"],
@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     title: "Buzz & Bites",
-    image: "/my_portfolio/public/projects/buzz-bites.png",
+    image: "/my_portfolio/projects/buzz-bites.png",
     description:
       "Responsive coffee ordering platform with cart functionality.",
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
