@@ -1,5 +1,7 @@
 import "./Achievements.css";
-import CountUp from "react-countup";
+import { motion } from "framer-motion";
+import AnimatedNumber from "./AnimatedNumber";
+import { useState } from "react";
 import {
   FaTrophy,
   FaCode,
@@ -7,31 +9,69 @@ import {
 } from "react-icons/fa";
 
 function Achievements() {
+   const [startCount, setStartCount] = useState(false);
   return (
     <section id="achievements" className="achievements">
 
       <h2>Achievements</h2>
 
-      <div className="stats-container">
+     <div className="stats-container">
+<motion.div
+  className="stats-container"
+  onViewportEnter={() => setStartCount(true)}
+  viewport={{ once: true }}
+>
 
-        <div className="stat-card">
-          <h3>3+</h3>
-          <p>Hackathons</p>
-        </div>
+  <motion.div
+    className="stat-card"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.6 }}
+  >
+    <h3>
+      <AnimatedNumber
+        value={3}
+        startAnimation={startCount}
+      />
+    </h3>
+    <p>Hackathons</p>
+  </motion.div>
 
-        <div className="stat-card">
-          <h3>
-           10+
-          </h3>
-          <p>Projects</p>
-        </div>
+  <motion.div
+    className="stat-card"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.8 }}
+  >
+    <h3>
+      <AnimatedNumber
+        value={10}
+        startAnimation={startCount}
+      />
+    </h3>
+    <p>Projects</p>
+  </motion.div>
 
-        <div className="stat-card">
-          <h3>
-           5+
-          </h3>
-          <p>Certifications</p>
-        </div>
+  <motion.div
+    className="stat-card"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 1 }}
+  >
+    <h3>
+      <AnimatedNumber
+        value={6}
+        startAnimation={startCount}
+      />
+    </h3>
+    <p>Certifications</p>
+  </motion.div>
+
+</motion.div>
+  
 
       </div>
 

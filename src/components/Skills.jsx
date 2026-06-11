@@ -1,4 +1,6 @@
 import "./Skills.css";
+import { motion } from "framer-motion";
+
 import {
   FaPython,
   FaReact,
@@ -19,18 +21,37 @@ function Skills() {
   return (
     <section id="skills" className="skills">
 
-      <h2>Skills</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        Skills
+      </motion.h2>
 
       <div className="skills-container">
 
-        <div className="skill-category">
+        {/* Programming */}
+        <motion.div
+          className="skill-category"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <h3>Programming</h3>
 
           <div className="skill">
             <FaPython />
             <span>Python</span>
             <div className="progress">
-              <div style={{ width: "90%" }}></div>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: "90%" }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+              />
             </div>
           </div>
 
@@ -38,7 +59,12 @@ function Skills() {
             <FaJava />
             <span>Java</span>
             <div className="progress">
-              <div style={{ width: "80%" }}></div>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: "80%" }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+              />
             </div>
           </div>
 
@@ -46,19 +72,36 @@ function Skills() {
             <SiJavascript />
             <span>JavaScript</span>
             <div className="progress">
-              <div style={{ width: "80%" }}></div>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: "80%" }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+              />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="skill-category">
+        {/* AI/ML */}
+        <motion.div
+          className="skill-category"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <h3>AI / ML</h3>
 
           <div className="skill">
             <SiTensorflow />
             <span>Machine Learning</span>
             <div className="progress">
-              <div style={{ width: "88%" }}></div>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: "88%" }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+              />
             </div>
           </div>
 
@@ -66,7 +109,12 @@ function Skills() {
             <FaPython />
             <span>Data Analysis</span>
             <div className="progress">
-              <div style={{ width: "85%" }}></div>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: "85%" }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+              />
             </div>
           </div>
 
@@ -74,19 +122,36 @@ function Skills() {
             <SiTensorflow />
             <span>Deep Learning</span>
             <div className="progress">
-              <div style={{ width: "75%" }}></div>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: "75%" }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+              />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="skill-category">
+        {/* Web Development */}
+        <motion.div
+          className="skill-category"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
           <h3>Web Development</h3>
 
           <div className="skill">
             <FaReact />
             <span>React</span>
             <div className="progress">
-              <div style={{ width: "80%" }}></div>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: "80%" }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+              />
             </div>
           </div>
 
@@ -94,7 +159,12 @@ function Skills() {
             <FaHtml5 />
             <span>HTML</span>
             <div className="progress">
-              <div style={{ width: "95%" }}></div>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: "95%" }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+              />
             </div>
           </div>
 
@@ -102,7 +172,12 @@ function Skills() {
             <FaCss3Alt />
             <span>CSS</span>
             <div className="progress">
-              <div style={{ width: "90%" }}></div>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: "90%" }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+              />
             </div>
           </div>
 
@@ -110,19 +185,36 @@ function Skills() {
             <SiFlask />
             <span>Flask</span>
             <div className="progress">
-              <div style={{ width: "75%" }}></div>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: "75%" }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+              />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="skill-category">
+        {/* Database */}
+        <motion.div
+          className="skill-category"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2 }}
+        >
           <h3>Database</h3>
 
           <div className="skill">
             <SiMysql />
             <span>MySQL</span>
             <div className="progress">
-              <div style={{ width: "85%" }}></div>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: "85%" }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+              />
             </div>
           </div>
 
@@ -130,10 +222,15 @@ function Skills() {
             <FaDatabase />
             <span>SQL</span>
             <div className="progress">
-              <div style={{ width: "85%" }}></div>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: "85%" }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+              />
             </div>
           </div>
-        </div>
+        </motion.div>
 
       </div>
 
