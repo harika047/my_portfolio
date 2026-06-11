@@ -2,7 +2,6 @@ import "./Certifications.css";
 import {
   FaCertificate,
   FaGoogle,
-  FaJava
 } from "react-icons/fa";
 
 function Certifications() {
