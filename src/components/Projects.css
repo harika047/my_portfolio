@@ -144,3 +144,22 @@ flex-direction:column;
 }
 
 }
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #6f4e37;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #4b2e20;
+}

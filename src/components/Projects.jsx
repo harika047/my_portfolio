@@ -2,7 +2,6 @@ import "./Projects.css";
 import { projects } from "../data/projects";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-
 function Projects() {
   return (
     <section id="projects" className="projects">
@@ -23,6 +22,28 @@ function Projects() {
                 {project.tech.map((tech, i) => (
                   <span key={i}>{tech}</span>
                 ))}
+              </div>
+
+              <div className="project-links">
+                {project.github !== "#" && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub /> GitHub
+                  </a>
+                )}
+
+                {project.demo !== "#" && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaExternalLinkAlt /> Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </div>
