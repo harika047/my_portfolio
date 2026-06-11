@@ -30,7 +30,7 @@ function Certifications() {
 
         <div className="cert-card">
           <div className="cert-icon">
-            <FaJava />
+            <FaCertificate />
           </div>
 
           <h3>NPTEL Programming in Java</h3>
