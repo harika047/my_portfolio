@@ -139,3 +139,75 @@ transform:rotate(12deg) scale(1.1);
   color: inherit;
   display: block;
 }
+.certificate-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 18px;
+  padding: 10px 22px;
+
+  background: rgba(0, 153, 255, 0.12);
+  border: 2px solid rgba(0, 153, 255, 0.35);
+  border-radius: 999px;
+
+  color: #2da8ff;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.cert-card:hover .certificate-btn {
+  background: rgba(0, 153, 255, 0.2);
+  border-color: #2da8ff;
+  box-shadow: 0 0 15px rgba(45, 168, 255, 0.3);
+}
+.certificate-btn {
+  margin-top: 18px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background: rgba(0, 170, 255, 0.12);
+  border: 1px solid rgba(0, 170, 255, 0.3);
+  color: #29b6ff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.cert-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cert-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: auto;
+}
+
+.cert-card span{
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: rgba(0,153,255,0.12);
+  border: 1px solid rgba(0,153,255,0.3);
+  color: #29b6ff;
+  font-weight: 600;
+}
+
+.certificate-btn{
+  padding: 10px 24px;
+  border-radius: 30px;
+  background: rgba(0,153,255,0.12);
+  border: 1px solid rgba(0,153,255,0.3);
+  color: #29b6ff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover .certificate-btn{
+  background: rgba(0,153,255,0.2);
+  transform: translateY(-2px);
+}

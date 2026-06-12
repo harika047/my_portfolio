@@ -78,12 +78,19 @@ function Certifications() {
               y: -10,
             }}
           >
-            <div className="cert-icon">{cert.icon}</div>
+         <div className="cert-icon">{cert.icon}</div>
 
-            <h3>{cert.title}</h3>
+<h3>{cert.title}</h3>
 
-            <span>{cert.issuer}</span>
-          </motion.a>
+<div className="cert-footer">
+  <span>{cert.issuer}</span>
+
+  <div className="certificate-btn">
+    View Certificate →
+  </div>
+</div>
+</motion.a>
+          
         ))}
       </div>
     </section>
