@@ -5,7 +5,7 @@ export const projects = [
     description:
       "ML web application predicting customer purchase intent with 85% accuracy.",
     tech: ["Python", "Flask", "Scikit Learn"],
-    github: "#",
+    github: "https://github.com/harika047/customer-purchase-prediction-app.git",
     demo: "https://customer-purchase-prediction-app.onrender.com"
   },
   {
@@ -14,7 +14,7 @@ export const projects = [
     description:
       "Responsive coffee ordering platform with cart functionality.",
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    github: "#",
+    github: "https://github.com/harika047/Buzz-and-Bites-App.git",
     demo: "https://harika047.github.io/Buzz-and-Bites-App/"
   }
 ];
