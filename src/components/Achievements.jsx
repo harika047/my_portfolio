@@ -75,37 +75,69 @@ function Achievements() {
 
       </div>
 
-      <div className="achievement-grid">
+  <div className="achievement-grid">
 
-        <div className="achievement-card">
-          <FaTrophy />
-          <h3>PVPSIT Full Stack Hackathon</h3>
-          <p>
-            Secured a position among the Top 5 teams by
-            developing an innovative full-stack solution.
-          </p>
-        </div>
+  <motion.div
+    className="achievement-card"
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5 }}
+  >
+    <FaTrophy className="achievement-icon" />
+    <h3>MERNVERSE 2026 Hackathon</h3>
+    <p>
+      Secured <strong>2nd Prize</strong> in the 24-hour MERNVERSE Hackathon by
+      developing PlacementPilot AI, an AI-powered placement preparation platform.
+    </p>
+  </motion.div>
 
-        <div className="achievement-card">
-          <FaCode />
-          <h3>AI Chatbot Development Hackathon</h3>
-          <p>
-            Designed and developed an AI-powered chatbot
-            to solve real-world communication challenges.
-          </p>
-        </div>
+  <motion.div
+    className="achievement-card"
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.7 }}
+  >
+    <FaCode className="achievement-icon" />
+    <h3>PVPSIT Full Stack Hackathon</h3>
+    <p>
+      Secured a <strong>Top 5 position among 34 teams</strong> by developing an
+      innovative full-stack solution.
+    </p>
+  </motion.div>
 
-        <div className="achievement-card">
-          <FaLightbulb />
-          <h3>Eco Track Ideathon</h3>
-          <p>
-            Participated in an innovation challenge focused
-            on sustainable and eco-friendly technology solutions.
-          </p>
-        </div>
+  <motion.div
+    className="achievement-card"
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.9 }}
+  >
+    <FaCode className="achievement-icon" />
+    <h3>AI Chatbot Development Hackathon</h3>
+    <p>
+      Designed and developed an AI-powered chatbot to solve real-world
+      communication challenges.
+    </p>
+  </motion.div>
 
-      </div>
+  <motion.div
+    className="achievement-card"
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 1.1 }}
+  >
+    <FaLightbulb className="achievement-icon" />
+    <h3>Eco Track Ideathon</h3>
+    <p>
+      Participated in an innovation challenge focused on sustainable and
+      eco-friendly technology solutions.
+    </p>
+  </motion.div>
 
+</div>
     </section>
   );
 }

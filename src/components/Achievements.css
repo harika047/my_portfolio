@@ -66,71 +66,71 @@
 
 .achievement-grid {
   display: grid;
-  grid-template-columns:
-    repeat(auto-fit, minmax(300px, 1fr));
-
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  margin-top: 40px;
 }
 
 .achievement-card {
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.1);
-
   backdrop-filter: blur(15px);
 
-  padding: 35px;
   border-radius: 22px;
+  padding: 35px;
 
-  transition: all 0.4s ease;
+  min-height: 260px;
 
-  animation: fadeUp 0.8s ease forwards;
+  display: flex;
+  flex-direction: column;
+
+  transition: .4s ease;
 }
 
 .achievement-card:hover {
-  transform: translateY(-12px);
-
-  box-shadow:
-    0 15px 40px rgba(0,229,255,0.25);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,229,255,.25);
 }
 
-/* ICON CIRCLE */
+.icon-wrapper{
+  width:70px;
+  height:70px;
 
-.icon-wrapper {
-  width: 70px;
-  height: 70px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background:linear-gradient(135deg,#00e5ff,#00ff95);
 
-  border-radius: 50%;
-
-  background: linear-gradient(
-    135deg,
-    #00e5ff,
-    #00ff95
-  );
-
-  margin-bottom: 25px;
-
-  animation: float 3s ease-in-out infinite;
+  margin-bottom:25px;
 }
 
-.icon-wrapper svg {
-  font-size: 1.8rem;
-  color: #081b29;
+.icon-wrapper svg{
+  color:#081b29;
+  font-size:30px;
 }
 
-.achievement-card h3 {
-  margin-bottom: 15px;
-  font-size: 1.3rem;
+.achievement-card h3{
+  font-size:1.6rem;
+  margin-bottom:15px;
 }
 
-.achievement-card p {
-  color: #cbd5e1;
-  line-height: 1.8;
+.achievement-card p{
+  color:#cbd5e1;
+  line-height:1.8;
+  margin-top:8px;
 }
 
+/* Responsive */
+
+@media(max-width:900px){
+
+.achievement-grid{
+    grid-template-columns:1fr;
+}
+
+}
 /* ---------- ANIMATIONS ---------- */
 
 @keyframes fadeUp {
